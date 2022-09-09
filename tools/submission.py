@@ -27,6 +27,7 @@ def main() -> None:
     filtered = targetted.difference(ignored)
     if files_exist(filtered):
         create_zip(date_prefix(parse_file_string(target) + ".zip"), filtered)
+    print("File has been created!")
 
 
 def files_exist(files: Set[str]) -> bool:
