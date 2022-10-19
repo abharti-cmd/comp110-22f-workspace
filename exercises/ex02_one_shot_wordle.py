@@ -2,10 +2,7 @@
 
 __author__ = "730554167"
 
-from tkinter import Y
-
-
-secret = str("knoll")
+secret = str("python")
 
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
@@ -25,24 +22,18 @@ while x < len(guess):
     else:
         exists = False
         counter = 0
-        while exists == False and counter < len(secret):
+        while exists is False and counter < len(secret):
             if guess[x] == secret[counter]:
                 exists = True
             counter += 1
-        if exists == True:
+        if exists is True:
             result = result + YELLOW_BOX
         else:
-            result = result + WHITE_BOX
-        
+            result = result + WHITE_BOX  
     x += 1
 print(result) 
 
-
-while len(guess) == len(secret):
-    if guess == secret: 
-        print ("Woo! You got it!")
-        exit()
-    else: 
-        print("Not quite. Play again soon!")
-        exit()
-
+if guess == secret: 
+    print("Woo! You got it!")
+else: 
+    print("Not quite. Play again soon!")
