@@ -1,0 +1,8 @@
+def zip(one: list[str], two: list[str]) -> dict[str,str]:
+    """Build a dictionary from two lists"""
+    assert len(one) == len(two)
+    result: dict[str, str] == {}
+    for i in range(0,len(one)):
+        result[one[i]] = two[i]
+    
+    return result
