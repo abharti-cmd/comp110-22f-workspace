@@ -3,7 +3,7 @@
 __author__ = "730554167"
 
 from exercises.ex07.dictionary import invert, favorite_color, count
-import pytest
+import pytest 
 
 
 def test_invert_1() -> None:

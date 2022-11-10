@@ -1,8 +1,8 @@
 """The ViewController drives the visualization of the simulation.""" 
 
 from turtle import Turtle, Screen, _Screen, done
-from exercises.ex09.model import Model
-from exercises.ex09 import constants
+from model import Model
+import constants
 from typing import Any
 from time import time_ns
 
